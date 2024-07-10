@@ -1,0 +1,15 @@
+{
+  "name": "hgati/module-search-spam-protection",
+  "description": "Magento2 Search Spam Protection",
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Hgati\\SearchSpamProtection\\": "src/"
+    },
+    "files": [
+      "src/registration.php"
+    ]
+  }
+}

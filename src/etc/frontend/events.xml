@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch_catalogsearch_result_index">
+        <observer name="Hgati_SearchSpamProtection::controller_action_predispatch" instance="Hgati\SearchSpamProtection\Observer\ControllerActionPredispatchObserver" />
+    </event>
+</config>
