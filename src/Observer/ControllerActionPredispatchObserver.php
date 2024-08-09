@@ -41,6 +41,7 @@ class ControllerActionPredispatchObserver implements ObserverInterface
 
         $words = $this->configuration->getWords();
         $q = $request->getParam('q');
+        if(empty($q)) return;
 
         foreach ($words as $word) {
             if (strpos($q, $word) !== false) {
